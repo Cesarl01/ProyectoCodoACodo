@@ -11,8 +11,6 @@ body {
     background-repeat: round;
     background-size: contain;
     align-items: center;
-    /*background: #E3E3E3;
-    display: flex;*/
     height: 100vh;
     justify-content: center;
     overflow:hidden;
@@ -30,20 +28,15 @@ header {
 }
 
 header div {    
-
-    /*background-image: url("../Images/LogoFyQOrig.png");
-    height: 100%;
-    width: 100%;*/
-    margin: 0 0 1% 8%;
+    margin: 0 0 2% 8%;
     font-family: Billy Ohio;
     color: white;
     background-size:contain;
     background-repeat:no-repeat;
 }
 
-iframe {
-    margin: 1% 0 0 5%;
-  
+iframe {  
+    border: none;
 }
 scroll-container {
     display: block;
@@ -90,6 +83,9 @@ footer {
   
 }
 @media only screen and (max-width: 700px){
+    body {
+      background-size: 232%;
+    }
     #HeaderFont_1 {
         font-size: 17vw;
         padding: 70px 0 0 0px;
@@ -218,14 +214,8 @@ input[type=checkbox]{
    }
 /*Estilo para carrusel de imagenes*/
 
-#carrusel {
-        /*background-image: url("../Images/dep-quesos-y-fiambres.png);*/
-        background-repeat: round;
-        background-size: contain;
-        align-items: center;
-        /*background: #E3E3E3;
-                        display: flex;*/
-        height: 100vh;
+#carrusel {  
+        background: none;
         justify-content: center;
     }
 
