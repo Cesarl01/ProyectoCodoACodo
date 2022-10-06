@@ -213,10 +213,11 @@ input[type=checkbox]{
          }   
    }
 /*Estilo para carrusel de imagenes*/
-
+#insheet {
+  background: none;
+}
 #carrusel {  
-        background: none;
-        justify-content: center;
+       justify-content: center;
     }
 
 @-webkit-keyframes scroll {
