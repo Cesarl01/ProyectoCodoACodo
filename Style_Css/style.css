@@ -278,3 +278,11 @@ input[type=checkbox]{
     height : "100px";
     width : "250px"
   }
+/*Estilo Contacto.html*/
+form div {
+  color: aliceblue;
+  width: 100%;
+}
+form {
+  margin: 2% 0% 0% 38%;
+}

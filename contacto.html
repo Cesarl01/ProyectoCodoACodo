@@ -5,9 +5,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link  rel="stylesheet" href="Style_Css/style.css">
- 
+
     </head>
     <body id="insheet">
-       <form>Nombre</form>         
+        <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+
+            <div>Nombre y Apellido:<input type="text" name="nombre" size="30" maxlength="100"></div>
+                        
+            <div>Email <input type="text" name="email" size="25" maxlength="100" value=" ">  </div>          
+            
+            <div>Provincia  <select name="direccion">
+                <option value="0">Seleccione una opción</option>
+            
+                <option value="1">Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.
+                
+                <option value="2">Recoleta.
+                
+                <option value="3">Balvanera y San Cristóbal.
+                
+                <option value="4">La Boca, Barracas, Parque Patricios y Nueva Pompeya.
+                  
+                <option value="5">Almagro y Boedo.
+
+                <option value="6">Caballito.
+
+                <option value="7">Flores y Parque Chacabuco.
+                
+                <option value="8">Villa Soldati, Villa Riachuelo y Villa Lugano.
+                        
+                <option value="9">Liniers, Mataderos y Parque Avellaneda.
+                        
+                <option value="10">Villa Real, Monte Castro, Versalles, Floresta, Vélez Sarsfield y Villa Luro.
+                          
+                <option value="11">Villa General Mitre, Villa Devoto, Villa del Parque y Villa Santa Rita.
+                
+                <option value="12">Coghlan, Saavedra, Villa Urquiza y Villa Pueyrredón.
+
+                <option value="13">Núñez, Belgrano y Colegiales.
+                
+                <option value="14">Palermo.
+                                
+                <option value="15">Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas.                                        
+                
+                </select></div>
+            
+            <br>
+            
+            <div>Cliente
+                                    
+            <input type="radio" name="cliente" value="y" > Actual
+                                   
+            <input type="radio" name="cliente" value="n"> Potencial</div>                                    
+            <br>
+            
+            <div>Comentarios sobre su satisfacción personal
+            
+            <br>
+            
+            <textarea cols="60" rows="5" name="comentarios"></textarea></div>
+            
+            <br>
+            <input type="submit" value="Enviar formulario">
+            
+            
+            <input type="Reset" value="Borrar todo">
+            
+            </form>     
     </body>
 </html>
