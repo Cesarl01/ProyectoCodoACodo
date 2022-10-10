@@ -5,71 +5,172 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link  rel="stylesheet" href="Style_Css/style.css">
+        <link rel="stylesheet" href="Style_Css/Style_sheet.css">
 
     </head>
     <body id="insheet">
-        <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+        <div class="col-9">
+            <form action="mailto:mail@gmail.com" name="formulario" method="post" enctype="text/plain">
+           
+                <div>Nombre y Apellido:<input type="text" name="nombre" size="30" maxlength="100"></div>
+                            
+                <div>Email <input type="text" name="email" size="25" maxlength="100" value=" ">  </div>          
+                
+                <div>Provincia  <select name="direccion">
+                    <option value="0">Seleccione una opción</option>
+                
+                    <option value="1">Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.
+                    
+                    <option value="2">Recoleta.
+                    
+                    <option value="3">Balvanera y San Cristóbal.
+                    
+                    <option value="4">La Boca, Barracas, Parque Patricios y Nueva Pompeya.
+                    
+                    <option value="5">Almagro y Boedo.
 
-            <div>Nombre y Apellido:<input type="text" name="nombre" size="30" maxlength="100"></div>
-                        
-            <div>Email <input type="text" name="email" size="25" maxlength="100" value=" ">  </div>          
-            
-            <div>Provincia  <select name="direccion">
-                <option value="0">Seleccione una opción</option>
-            
-                <option value="1">Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.
-                
-                <option value="2">Recoleta.
-                
-                <option value="3">Balvanera y San Cristóbal.
-                
-                <option value="4">La Boca, Barracas, Parque Patricios y Nueva Pompeya.
-                  
-                <option value="5">Almagro y Boedo.
+                    <option value="6">Caballito.
 
-                <option value="6">Caballito.
+                    <option value="7">Flores y Parque Chacabuco.
+                    
+                    <option value="8">Villa Soldati, Villa Riachuelo y Villa Lugano.
+                            
+                    <option value="9">Liniers, Mataderos y Parque Avellaneda.
+                            
+                    <option value="10">Villa Real, Monte Castro, Versalles, Floresta, Vélez Sarsfield y Villa Luro.
+                            
+                    <option value="11">Villa General Mitre, Villa Devoto, Villa del Parque y Villa Santa Rita.
+                    
+                    <option value="12">Coghlan, Saavedra, Villa Urquiza y Villa Pueyrredón.
 
-                <option value="7">Flores y Parque Chacabuco.
-                
-                <option value="8">Villa Soldati, Villa Riachuelo y Villa Lugano.
-                        
-                <option value="9">Liniers, Mataderos y Parque Avellaneda.
-                        
-                <option value="10">Villa Real, Monte Castro, Versalles, Floresta, Vélez Sarsfield y Villa Luro.
-                          
-                <option value="11">Villa General Mitre, Villa Devoto, Villa del Parque y Villa Santa Rita.
-                
-                <option value="12">Coghlan, Saavedra, Villa Urquiza y Villa Pueyrredón.
-
-                <option value="13">Núñez, Belgrano y Colegiales.
-                
-                <option value="14">Palermo.
-                                
-                <option value="15">Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas.                                        
-                
-                </select></div>
-            
-            <br>
-            
-            <div>Cliente
+                    <option value="13">Núñez, Belgrano y Colegiales.
+                    
+                    <option value="14">Palermo.
                                     
-            <input type="radio" name="cliente" value="y" > Actual
-                                   
-            <input type="radio" name="cliente" value="n"> Potencial</div>                                    
-            <br>
+                    <option value="15">Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas.                                        
+                    
+                    </select></div>
+                
+                <br>
+                
+                <div>Cliente
+                                        
+                <input type="radio" name="cliente" value="y" > Actual
+                                    
+                <input type="radio" name="cliente" value="n"> Potencial</div>                                    
+                <br>
+                
+                <div>Comentarios sobre su satisfacción personal
+                
+                <br>
+                
+                <textarea cols="60" rows="5" name="comentarios"></textarea></div>
+                
+                <br>
+                <input type="submit" value="Enviar">
+                                
+                <input type="Reset" value="Borrar todo">
             
-            <div>Comentarios sobre su satisfacción personal
-            
-            <br>
-            
-            <textarea cols="60" rows="5" name="comentarios"></textarea></div>
-            
-            <br>
-            <input type="submit" value="Enviar formulario">
-            
-            
-            <input type="Reset" value="Borrar todo">
-            
-            </form>     
+            </form>  
+        </div> 
+        <div class="col-3">
+            <p id="nombre"></p>
+            <p id="email"></p>
+            <p id="direccion"></p>
+            <p id="cliente"></p>
+        </div>                   
+        
+        <script>
+            var formulario = document.getElementsByName('formulario')[0],   //[0] Primer elemento, el formulario en si mismo.
+                elementos = formulario.elements,                            // Elementos del form, no lo usamos en este script.
+                boton = document.getElementById('b1')                       // El botón        
+            // --------------------------------------------------------
+            // Validamos Nombre
+            // --------------------------------------------------------
+            var validarNombre = function (e) {
+                if (formulario.nombre.value == 0) {      // Si el campo id="nombre" del form está vacio...
+                    //alert("Completa el campo nombre");
+                    document.getElementById("nombre").innerHTML = "* Campo nombre obligatorio"
+                    e.preventDefault();                 // Evita elcomportamiento por defecto
+                    //https://www.w3schools.com/jsref/event_preventdefault.asp
+    
+                }else {
+                    document.getElementById("nombre").innerHTML = ""
+                }
+            };
+    
+            // --------------------------------------------------------
+            // Validamos Client
+            // --------------------------------------------------------
+            var validarRadio = function (e) {
+                if (formulario.cliente[0].checked == true ||
+                    formulario.cliente[1].checked == true ){
+                        document.getElementById("cliente").innerHTML = ""
+                } else {  //Si al menos uno de los Radio no está marcado....
+                    //alert("Selecciona una opción de cliente");
+                    document.getElementById("cliente").innerHTML = "* Opción de cliente obligatorio"
+                    e.preventDefault();
+                }
+            };
+    
+            // --------------------------------------------------------
+            // Validamos el Mail
+            // --------------------------------------------------------
+            var validarMail = function (e) {
+                if (formulario.email.value == 0) {
+                    //lert("Debe agregar un email destino.");
+                    document.getElementById("email").innerHTML = "* Email destino obligatorio"
+                    e.preventDefault();
+                }else {
+                    if(formulario.email.value.indexOf("@") == -1 )  {
+                        //alert("Debe agregar un email valido");
+                        document.getElementById("email").innerHTML = "* Debe agregar un email valido"
+                        e.preventDefault();
+                    }else {
+                        document.getElementById("email").innerHTML = ""
+                    }
+                }
+            };
+            // --------------------------------------------------------
+            // Validamos la dirección
+            // --------------------------------------------------------
+            var validarDireccion = function (e) {
+                if (formulario.direccion.value == 0) {
+                    //alert("Seleccione una dirección.");
+                    document.getElementById("direccion").innerHTML = "* Seleccione una dirección."
+                    e.preventDefault();
+                }else {
+                    document.getElementById("direccion").innerHTML = ""
+                }
+            };
+        
+            // --------------------------------------------------------
+            // Se ejecuta al presionar submit e invoca a las tres validaciones
+            // --------------------------------------------------------
+            var validar = function (e) {  // "e" es el evento recibido del form (https://developer.mozilla.org/es/docs/Web/API/Event/preventDefault)
+                validarNombre(e);
+                validarMail(e);
+                validarDireccion(e);
+                validarRadio(e);
+            };
+            var reset = function (e) {
+                //alert("borrando")
+                document.getElementsByName(nombre).value = "";
+                document.getElementsByName(cliente[0]).checked = false;
+                document.getElementsByName(cliente[1]).checked = false;
+                document.getElementsByName(email).value = "";
+                document.getElementsByName(direccion).value = 0;
+                document.getElementById("nombre").innerHTML = "";
+                document.getElementById("cliente").innerHTML = "";
+                document.getElementById("email").innerHTML = "";
+                document.getElementById("direccion").innerHTML = "";
+            }
+    
+            // --------------------------------------------------------
+            // Espera que se presione "enviar" y llama a "validar"
+            // submit es un evento DEL FORM, no del botón!
+            formulario.addEventListener("submit", validar);       
+            formulario.addEventListener("reset", reset);   
+        </script>        
     </body>
 </html>

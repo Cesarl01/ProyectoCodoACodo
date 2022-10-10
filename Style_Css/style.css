@@ -290,5 +290,10 @@ form div {
   width: 100%;
 }
 form {
-  margin: 2% 0% 0% 38%;
+  margin: 2% 0% 0% 20%;
+}
+
+div p {
+  color: red
+  
 }
