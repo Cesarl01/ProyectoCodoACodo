@@ -4,14 +4,15 @@
               <meta charset="utf-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1" />
               <link rel="stylesheet" href="Style_Css/style.css">
-              <link rel="javascript" href="Js/script.js"
+              <link rel="stylesheet" href="Style_Css/Style_sheet.css">
+              <link rel="javascript" href="Js/script.js"/>
               <title>Codo a Codo 1st Proyect</title>
           </head>         
               <body>
-                  <!--<main>-->
+                <main>
                       <header>
-                          <div id="HeaderFont_1">FyQ</div>
-                          <div id="HeaderFont_2">Vinotinto</div>
+                        <a href="Index.html"><div id="HeaderFont_1" >FyQ</div>
+                          <div id="HeaderFont_2" >Vinotinto</div></a>
                       </header>
                       <nav class="navbar">
                           <div class="logo"></div>
@@ -50,10 +51,26 @@
                       <!--<iframe width="90%" height="55%" src="carrusel.html" name="external" id="external"> </iframe>-->
 
                       <footer>
-                          <p>Footer</p>
+                          <!--<p>Footer</p>-->
+                          <div class="col-3"> 
+                            <div class="container">
+                                <!-- Flex container -->
+                                <div class="item item-1" style="margin-left: 100px;"><img src="Images/LogoFyQOrig.png"></div><br>                                
+                                <div class="item item-2"><div style="color:white; font-size:medium ; font-family:Arial, Helvetica, sans-serif; font-size: small ; padding: 91px 0 0 0; margin: 0 0 0 -190px; width: 280px;">Somos una tienda de venta de fiambres, Quesos y bebidas alcoholicas y no alcoholicas.</div></div>
+                            </div>                            
+                          </div>
+                          <div class="col-3"> <p style="color:white; font-size:medium ; font-family:Arial, Helvetica, sans-serif ; font-weight: bold;"> Sobre nosotros</p>
+                            <div style="font-family:Arial, Helvetica, sans-serif ; font-size: small ;">Dirección: Manuel de Anchorena 1110, Recoleta, CABA</div>
+                            <div style="font-family:Arial, Helvetica, sans-serif ; font-size: small ;">Teléfono:+54 9 11 38238443</div>
+                            <div style="font-family:Arial, Helvetica, sans-serif ; font-size: small ;">Horario:Lun. a Sáb. 11:00 - 21:00</div> </div>
+                          <div class="col-6"><form action="Index.html" name="formulario" method="post" enctype="text/plain">                            
+                            <p style="color:white; font-size:medium ; font-family:Arial, Helvetica, sans-serif ;font-size: small; font-weight: bold;"> ¡Recibí las ofertas en tu email!</p>
+                            <div style="color:white; font-size:medium ; font-family:Arial, Helvetica, sans-serif; font-size: medium  ";>Email <input type="text" name="email" size="40" maxlength="150" value=" "> <input type="submit" value="Enviar"> </div>    
+                          </form></div>
+    
                       </footer>
 
-                  <!--</main>-->
+                </main>
           </body>
 
           </html>
