@@ -1,0 +1,290 @@
+
+/*Estilo FOOTER */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+footer section {
+    margin: 10px;
+    width: 25%;
+    height: 60%;
+    font-size:smaller;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+   background-color: rgb(19, 19, 19);
+   color: white;
+    
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+.direccion{
+    margin: -17px 0 0 -10px;   
+}
+
+.telefono{
+    margin: -17px 0 0 -10px;   
+}
+
+.horario {
+    margin: 8px 0 0 -10px;   
+}
+
+.info-footer div img {
+    width: 23px;
+    height: auto;
+    margin: 0 0 0 -35px;
+}
+
+footer section p {
+    font-weight: bold;
+}
+.info-footer h3 {
+    padding-left: 2px;
+}
+.info-footer p {
+    margin-left: 0px;
+}
+
+.social-media img {
+    width: 28px;
+    height: auto;
+    padding: 10px;
+}
+
+.social-media {
+    margin-right: 0;
+}
+
+
+
+.info p {
+    font-weight: 300;
+    padding-right: 25px;
+}
+
+
+footer button {
+    cursor: pointer;
+    background-color: rgb(35, 163, 210);
+    border: none;
+    border-radius: 5px;
+    color: rgb(32, 31, 31);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+footer button:hover {
+    background-color: rgb(81, 175, 209);
+    color: rgb(56, 54, 54);
+    transition: all 0.5s;
+    
+}
+.contact {
+    margin: 0 0 0 -160px;
+    padding: 10px 0 0 0;
+}
+@media (min-width: 360px) {
+    footer {
+       
+        height: 150px;
+    }
+    .container-footer {
+         flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    .container-footer p {
+        font-size: 14px;
+    }
+    .container-footer h3 {
+        font-size: 16px;
+    }
+    .social-media {
+        margin-bottom: 30%;
+    }
+
+    
+.info-footer div img {
+    width: 17px;
+    height: auto;
+}
+
+.info img {
+    width: 70px;
+    height: auto;
+    margin: 0 0 0 -100px;
+}
+.social-media img {
+    width: 19px;
+    height: auto;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.social-media img:hover {
+    width: 24px;
+    padding: 0;
+    transition: all 0.5s;
+  
+}
+
+footer input {
+    width: 100px;
+}
+
+footer button {
+    width: 43px;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 3px;
+}
+
+footer section {
+    width: 25%;
+   
+}
+}
+
+
+@media (min-width: 580px) {
+    footer input {
+        width: 135px;
+    }
+    
+    footer button {
+        width: 52px;
+        font-size: 11px;
+        text-align: center;
+        padding: 4px 3px;
+    }
+    
+.social-media img {
+    width: 21px;
+    height: auto;
+    padding: 7px;
+    transition: all 0.5s;
+}
+
+.container-footer p {
+    font-size: 15px;
+}
+.container-footer h3 {
+    font-size: 17px;
+}
+
+
+.social-media img:hover {
+    width: 26px;
+    padding: 0;
+    transition: all 0.5s;
+  
+}
+}
+
+@media (min-width: 670px) {
+    footer {
+        
+        height: 150px;
+    }
+
+    .container-footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+    }
+    .social-media {
+        margin-bottom: 10px;
+    }
+
+
+    footer input {
+        width: 115px;
+    }
+    
+    footer button {
+        width: 52px;
+        font-size: 11px;
+        padding: 5px 3px;
+    }
+    
+.social-media img {
+    width: 22px;
+    height: auto;
+    padding: 5px;
+    transition: all 0.5s;
+  
+}
+
+
+.social-media img:hover {
+    width: 27px;
+    padding: 0;
+    transition: all 0.5s;
+  
+}
+.info img {
+    width: 70px;
+    height: auto;
+    margin: 0 0 0 -100px;
+}
+
+
+}
+
+
+@media (min-width: 1024px) {
+    footer input {
+        width: 195px;
+    }
+    
+    footer button {
+        width: 53px;
+        font-size: 12px;
+        text-align: center;
+        padding: 4px 3px;
+    }
+    
+.social-media img {
+    width: 45px;    
+    padding: 10px;
+    transition: all 0.5s;
+  
+}
+
+.social-media img:hover {
+    width: 33px;
+    padding: 0;
+    transition: all 0.5s;
+  
+}
+
+.info img {
+    width: 80px;
+    height: auto;
+    margin: 0 0 0 -20px;
+}
+.container-footer p {
+    font-size: 17px;
+}
+.container-footer h3 {
+    font-size: 19px;
+}
+
+
+.info-footer div img {
+    width: 23px;
+  
+}
+}

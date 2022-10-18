@@ -11,17 +11,38 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-button {
+/*button {
     font-size: 14px;
     color: white;
-    background-color:red;
+    background-color:#0066ff;
     border-radius: 3px;
     border: 1px solid #303030;
-    padding: 5px;
-    margin: 0px
+    padding: 4px;
+    margin: 0;
+}*/
+button {
+    cursor: pointer;
+    background-color: rgb(35, 163, 210);
+    border: none;
+    border-radius: 5px;
+    color: rgb(32, 31, 31);
+    font-weight: 600;
+    transition: all 0.5s;
+    width: auto;
+    font-size: 12px;
+    text-align: center;
+    padding: 4px 3px;    
 }
+
+button:hover {
+    background-color: rgb(81, 175, 209);
+    color: rgb(56, 54, 54);
+    transition: all 0.5s;
+    
+}
+
 .winclass {
-    padding: 45% 0 0 0;
+    padding: 20% 0 0 0;
 }
 .item {
     background: inherit;

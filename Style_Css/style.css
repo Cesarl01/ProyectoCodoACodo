@@ -72,17 +72,6 @@ scroll-page {
     height: 40%;
 
  }
-footer {
-    
-    margin:0 -1% 0px -1%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    color: whitesmoke;
-    background-color: rgb(31, 32, 32); /*darkslategrey;*/
-    height: 150px;
-    display: flex !important;
-
-}
 @media only screen and (max-width: 700px){
     body {
       background-size: 232%;
@@ -98,7 +87,7 @@ footer {
     .slider::before, .slider::after {
       width: 0px !important;
     }
-}
+  }
 /*Estilo para fondo del Menu*/
 /* UTILITIES */
    a {
@@ -296,7 +285,7 @@ form {
   margin: 2% 0% 0% 20%;
 }
 
-div p {
+#nombre, #email, #direccion, #cliente{
   color: red
   
 }
