@@ -49,8 +49,8 @@ const getNameAxios = async idPost =>{
   try{
       numid = parseInt(idPost);
       //alert('el numero entrada '+idPost);
-      const resPost = await axios(`http://jsonplaceholder.typicode.com/posts/${numid}`);
-      const resUser = await axios(`http://jsonplaceholder.typicode.com/users/${resPost.data.userId}`);
+      const resPost = await axios(`https://jsonplaceholder.typicode.com/posts/${numid}`);
+      const resUser = await axios(`https://jsonplaceholder.typicode.com/users/${resPost.data.userId}`);
       //alert('el numero entrada numid '+numid);
       console.log(resPost);
       console.log(resUser);
