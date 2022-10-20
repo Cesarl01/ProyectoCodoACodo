@@ -55,7 +55,7 @@ const getNameAxios = async idPost =>{
       console.log(resPost);
       console.log(resUser);
       console.log(resUser.data.username);
-      alert('el numero username '+resUser.data.username)
+      //alert('el numero username '+resUser.data.username)
       document.getElementById("userId").innerHTML = '<b>Id ususario: </b>' + resPost.data.userId;
       document.getElementById("title").innerHTML ='<b>Título: </b>' + resPost.data.title ;
       document.getElementById("body").innerHTML ='<b>Comnteario: </b>'+ resPost.data.body;
