@@ -8,6 +8,8 @@
               <link rel="stylesheet" href="Style_Css/Style_footer.css">
               <link rel="javascript" href="Js/script.js"/>
               <link rel="shortcut icon" href="Images/favicon-16x16.ico">
+              <script type = "text/javascript" src ="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+              <script type="text/javascript" src="Js/script.js"></script>
               <title>Codo a Codo 1st Proyect</title>
           </head>         
               <body>
@@ -39,6 +41,7 @@
                                   </ul>
                               </li>
                               <li><a href="#address">Estamos aquí</a></li>
+                              <li><a href="#opinion">Comentarios</a></li>                              
                               <li><a href="#contact">Contactanos</a></li>                             
                           </ul>
                       </nav>
@@ -48,6 +51,7 @@
                           <scroll-page id="jamones"><iframe width="100%" height="100%" src="jamones.html"> </iframe></scroll-page>
                           <scroll-page id="quesos"><iframe width="100%" height="100%" src="quesos.html"> </iframe></scroll-page>
                           <scroll-page id="address"><iframe width="90%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3061451743524!2d-58.40737549999999!3d-34.5964193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8fbf5a1863%3A0xf5987f40cd8f0df7!2sFyQ%20Vinotinto!5e0!3m2!1ses-419!2sus!4v1664852684461!5m2!1ses-419!2sus" name="external" id="external"> </iframe></scroll-page>
+                          <scroll-page id="opinion"><iframe width="100%" height="100%" src="opiniones.html"> </iframe></scroll-page>
                           <scroll-page id="contact"><iframe width="100%" height="100%" src="contacto.html"> </iframe></scroll-page>
                       </scroll-container>
                       <!--<iframe width="90%" height="55%" src="carrusel.html" name="external" id="external"> </iframe>-->
@@ -79,16 +83,43 @@
                             <a href="https://www.twitter.com" target="_blank"><img src="Images/footer/twitter.svg" alt=""></a>
                         </section>
                         <section class="contact">
-                        <div class="col-12"><!--<form action="Index.html" name="formulario" method="post" enctype="text/plain"> -->
+                        <div class="col-12">
+                            <div id="mailinfo">
                             <p> ¡Recibí las ofertas en tu email!</p>
-                            <input type="text" size="40" placeholder="hola@gmail.com">
-                            <button type="submit"  >Enviar</button> 
-                            <!--<div style="color:white; font-size:medium ;";>Email <input type="text" name="email" size="40" maxlength="150" value=" "> <input type="submit" value="Enviar">-->
+                            <input type="text" ref="text" name="emailinput" size="40" placeholder = "hola@gmail.com">
+                            <button type="submit" v-on:click = "displaynumbers" >Enviar</button> 
+                            <br><br><div class="ClassVue">{{VarTnks}}</div>                           
+                            </div>
                         </div>     
                         </section>           
                       </footer>
 
                 </main>
+                <script type = "text/javascript">
+        
+                    const vm = new Vue({
+                    
+                    el: '#mailinfo',
+                    
+                    data: {                    
+                    VarTnks : ''                 
+                    },
+                    
+                    methods : {
+                    
+                    displaynumbers : function(event) {
+                        const text = vm.$refs.text.value
+                    console.log(event);
+                    
+                    vm.$refs.text.value  = '';
+                    return this.VarTnks = 'Serás informado periódicamente de nuestras ofertas! '+text;                                                            
+                    }
+                    
+                    },
+                    
+                    });
+                    
+                </script>            
           </body>
 
           </html>

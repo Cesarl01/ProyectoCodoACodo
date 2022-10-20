@@ -66,7 +66,11 @@ footer section p {
     margin-right: 0;
 }
 
-
+.ClassVue{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
 
 .info p {
     font-weight: 300;

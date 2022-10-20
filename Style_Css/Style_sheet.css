@@ -34,6 +34,10 @@ button {
     padding: 4px 3px;    
 }
 
+.coments {
+    color: white;
+}
+
 button:hover {
     background-color: rgb(81, 175, 209);
     color: rgb(56, 54, 54);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style_Css/style.css">
+    <link rel="stylesheet" href="Style_Css/Style_sheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    
+    <script src="Js/script.js"></script>
+    <script type = "text/javascript" src ="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+    <body id="insheet">
+        <section class="coments">
+           <script type = "text/javascript"> 
+                var numero  
+                numero = Math.floor(Math.random() * 100);
+                //alert("Numero generado: "+numero);
+                if (numero != 0) {
+                    getNameAxios(numero) ;
+                }else{
+                    numero = Math.floor(Math.random()*100) ;
+                    getNameAxios(numero);
+                }
+                //getNameAxios(Math.floor(Math.random() * 10)) ;
+                //alert(document.getElementById("numero").innerHTML );
+            </script>
+            <h3>Opiniones y comentarios</h3>
+            <div id="numero"></div>
+            <div id="userId"></div>
+            <div id="name"></div>
+            <div id="username"></div>
+            <div id="email"></div>
+            <div id="phone"></div>
+            <div id="company"></div>
+            <div id="catchPhrase"></div>            
+            <div id="title"></div>
+            <div id="body"></div>
+            
+
+        </section>
+
+    </body>
+
+</html>
